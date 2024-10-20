@@ -1,0 +1,433 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles for the body and html */
+html, body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    scroll-behavior: smooth;
+}
+
+/* Header Section */
+header {
+    background: #057bf1;
+    color: hsl(27, 94%, 49%);
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centering the entire content */
+}
+
+.logo {
+    position: absolute;
+    left: 2rem; /* Keep the logo on the left */
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    margin: 0 auto; /* Center the navbar items */
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+.logo {
+    width: 40px;
+    height: 40px;
+    object-fit: cover; /* This will ensure the image fits within the specified dimensions */
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.navbar a:hover {
+    background: #34495e;
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 2rem;
+    background: url('cloud.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 100vh;
+    position: relative;
+}
+
+.home-text {
+    max-width: 50%;
+}
+
+.home-text h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.home-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.home-text p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.home-img img {
+    max-width: 85%;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* About Me Section */
+.about {
+    display: flex;
+    align-items: center;
+    padding: 4rem 2rem;
+}
+
+.about-img img {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.about-text {
+    max-width: 50%;
+    margin-left: 2rem;
+}
+
+.about-text h2 {
+    margin-bottom: 1rem;
+}
+
+/* Projects Section */
+.projects {
+    padding: 4rem 2rem;
+    background: #fff;
+}
+
+.main-text {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.projects-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.box {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.box img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.box h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.box p {
+    margin-bottom: 1rem;
+}
+
+/* Skills Section */
+.skills {
+    background: #f0f4f8;
+    padding: 4rem 2rem;
+}
+
+.skills-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.skills-content .box {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+}
+
+/* Files Section */
+.files {
+    background: #fff;
+    padding: 4rem 2rem;
+}
+
+.files-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.files-content .box {
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    max-width: 300px;
+}
+
+/* CV Section */
+.cv {
+    background: #f0f4f8;
+    padding: 4rem 2rem;
+}
+
+.cv-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.cv-content .box {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+}
+
+/* Contact Section */
+.contact {
+    background: #fff;
+    padding: 4rem 2rem;
+}
+
+.contact-text {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.contact-list li {
+    margin: 0.5rem 0;
+}
+
+.contact-icons {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.contact-icons a {
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    color: #f5f0f0;
+    transition: color 0.3s;
+}
+
+.contact-icons a:hover {
+    color: #ff5722;
+}
+
+/* Footer Section */
+.footer {
+    padding: 1rem;
+    background: #0579ee;
+    color: #fff;
+    text-align: center;
+}
+
+/* Back to Top */
+.back-to-top {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background: #ff5722;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 2rem;
+    transition: background 0.3s;
+}
+
+.back-to-top:hover {
+    background: #e64a19;
+}
+/* General Button Styles */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background: #ff5722; /* Vibrant color for the button */
+    border-radius: 50px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.btn:hover,
+.btn:focus {
+    background: #e64a19; /* Slightly darker color on hover */
+    color: #fff;
+    border-color: #ff5722;
+    transform: translateY(-2px); /* Lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.btn:active {
+    background: #d84315; /* Darker shade when button is pressed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(1px); /* Pressed effect */
+}
+
+/* Additional Styles for Different Button Types */
+.btn-primary {
+    background: #ff5722;
+}
+
+.btn-secondary {
+    background: #2196f3; /* A cool blue color for secondary buttons */
+}
+
+.btn-tertiary {
+    background: #4caf50; /* A fresh green color for tertiary buttons */
+}
+
+.btn-primary:hover,
+.btn-secondary:hover,
+.btn-tertiary:hover {
+    border-color: transparent;
+}
+
+.btn-primary:active,
+.btn-secondary:active,
+.btn-tertiary:active {
+    background: #e64a19;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(1px);
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .home {
+        flex-direction: column;
+        text-align: center;
+        padding: 3rem 1rem;
+    }
+
+    .home-text {
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-img img {
+        margin-bottom: 2rem;
+    }
+
+    .projects-content,
+    .skills-content,
+    .files-content,
+    .cv-content {
+        flex-direction: column;
+    }
+
+    .box {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-text h1 {
+        font-size: 2rem;
+    }
+
+    .home-text h2 {
+        font-size: 1.2rem;
+    }
+
+    .home-text p {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .contact-icons a {
+        font-size: 1.2rem;
+    }
+}
